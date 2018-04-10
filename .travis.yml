@@ -1,2 +1,19 @@
+sudo: required
 
 language: php
+
+install:
+- echo "do nothing"
+
+before_script:
+
+script: 
+  - echo "do nothing"
+
+after_success:
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  on:
+branch: master
